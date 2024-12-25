@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- <link rel="stylesheet" href="../styles.css" /> -->
+  </head>
+
+  <body style="background-color: #212121; color: #fff">
+    <!-- <nav>
+      <a href="/" aria-current="page">Home</a>
+      <a href="https://www.youtube.com/@chaiaurcode" target="_blank"
+        >YouTube Channel</a
+      >
+    </nav> -->
+
+    <div id="wrapper">
+      <h1>Number Guessing Game</h1>
+      <p>Try and guess a random number between 1 and 100.</p>
+      <p>You have 5 attempts to guess the right number.</p>
+
+      <form class="form">
+        <label for="guessField" id="guess">Guess a number :</label>
+        <input
+          type="number"
+          id="guessField"
+          class="guessField"
+          min="1"
+          max="100"
+        />
+        <input
+          type="submit"
+          id="subt"
+          value="Submit Guess"
+          class="guessSubmit"
+        />
+      </form>
+
+      <div class="resultParas">
+        <p style="color: rgb(0, 229, 255)">
+          Previous Guesses :<span class="guesses"></span>
+        </p>
+        <p style="color: red">
+          Guesses Remaining:<span class="lastResult">5</span>
+        </p>
+        <p class="lowOrHi"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
